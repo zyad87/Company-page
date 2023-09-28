@@ -26,3 +26,29 @@ window.addEventListener('scroll', () => {
 scrollToTopButton.addEventListener('click', () => {
     document.documentElement.scrollTop = 0; // لمتصفحات حديثة
 });
+
+
+
+const darkModeButton = document.getElementById('darkModeButton');
+const body = document.body;
+
+// تعيين وضع الظلام باستناء
+darkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    // حفظ وضع الظلام في التخزين المحلي
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+
+// تحقق من وضع الظلام المحفوظ في التخزين المحلي عند تحميل الصفحة
+window.addEventListener('load', () => {
+    const darkMode = localStorage.getItem('darkMode');
+    
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+    }
+});

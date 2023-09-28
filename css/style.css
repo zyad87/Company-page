@@ -5,7 +5,9 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
-
+    background-color: #ffffff;
+    color: #0e0e22;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 nav.navbar{
     z-index: 15;
@@ -37,7 +39,6 @@ nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link:hover,
 nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link.active{
     background-color: #793fdfcc;
     color: #e8e8e8;
-
 }
 header{
     background-image:url(../images/backgerd.png) ;
@@ -80,21 +81,126 @@ header .overlay .carousel .carousel-item .carousel-content a{
 header .overlay .carousel .carousel-item .carousel-content a:hover{
     box-shadow: 0px 0px 20px 8px #6db5ed;
 }
+section.services{
+    padding: 80px 0;
+}
+section.services .services-title h3 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+section.services .card {
+   height: 330px;
+   padding: 50px;
+   margin-bottom: 20px; 
+   transition: all 1s ease-in-out ;
+}
+
+section.services .card:hover {
+    height: 400px;
+    background-color: #e8e8e8;
+ }
+
+section.services .card .card-img{
+    margin-bottom: 45px;
+ }
+ section.services .card .card-block h4{
+    font-size: 24px;
+    margin-bottom: 25px;
+ }
+ section.services .card .card-block p{
+    font-size: 15px;
+    line-height: 21px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out ;
+
+ }
+ section.services .card:hover .card-block p{
+    opacity: 1;
+
+ }
+
+
+
+
 #scrollToTopButton {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #793fdfcc;
+    background-color: #0e0e22;
     color: white;
-    padding: 10px 18px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s;
 
 }
-#scrollToTopButton:hover {
+.dark-mode #scrollToTopButton {
     background-color: #e8e8e8;
-    color: #793fdfcc;
+    color: #0e0e22;
+}
+.dark-mode #scrollToTopButton:hover {
+    color: #e8e8e8;
+    background-color: #793fdfcc;
+
+}
+#scrollToTopButton:hover {
+    background-color: #6db5ed;
 } 
+
+/* ستايل الصفحة العادية */
+
+
+/* ستايل الصفحة الداكنة */
+.dark-mode {
+    background-color: #0e0e22;
+    color: #ffffff;
+}
+.dark-mode nav.navbar.noTransparrent{
+    background-color: #0e0e22;
+    border: 1px solid #0a0a19 ;
+}
+.dark-mode nav.navbar.noTransparrent .nav-item a.nav-link{
+    color: #e8e8e8;
+}
+.dark-mode nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link:hover,
+.dark-mode nav.navbar.noTransparrent .navbar-nav .nav-item a.nav-link.active{
+    background-color: #6db5ed;
+    color: #e8e8e8;
+}
+.dark-mode nav.navbar.noTransparrent i.fa-bars{
+    color: #e8e8e8 !important;
+
+}
+button#darkModeButton{
+    border-radius: 50%;
+    border: none;
+    color: #e8e8e8;
+    background-color: #0e0e22;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+   }
+   @media (max-width:540px) {
+    button#darkModeButton{
+        margin-right: 7rem!important;
+       }
+}
+
+.dark-mode button#darkModeButton{
+ border-radius: 50%;
+ border: none;
+ color: #0e0e22;
+ background-color: #e8e8e8;
+ transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.dark-mode section.services .card {
+    background-color: #26243b;
+    color: #e8e8e8;
+    transition: all 1s ease-in-out ;
+ }
+ 
+ .dark-mode section.services .card:hover {
+     height: 400px;
+     background-color: #1d1b37;
+    }
