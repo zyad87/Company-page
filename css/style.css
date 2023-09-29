@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
-    background-color: #ffffff;
+    background-color: #F5F5F5;
     color: #0e0e22;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -83,6 +83,7 @@ header .overlay .carousel .carousel-item .carousel-content a:hover{
 }
 section.services{
     padding: 80px 0;
+    min-height: 700px;
 }
 section.services .services-title h3 {
     margin-bottom: 50px;
@@ -93,6 +94,7 @@ section.services .card {
    height: 330px;
    padding: 50px;
    margin-bottom: 20px; 
+   background-color: #fff;
    transition: all 1s ease-in-out ;
 }
 
@@ -120,6 +122,45 @@ section.services .card .card-img{
 
  }
 
+ section.gallery .gallery-title h3{
+    font-size: 40px;
+    margin-bottom: 60px;
+ }
+ section.gallery .gallery-work a.gallery-link{
+    position: relative;
+    display: block;
+ }
+
+ section.gallery .gallery-work .gallery-link .gallery-hover{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    color: #e8e8e8;
+    background-color: rgba(109, 181, 237, 0.9);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ;
+
+ }
+ section.gallery .gallery-work .gallery-link .gallery-hover i{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 40px ;
+    transform: translate(50% , 50%);
+ }
+
+
+ section.gallery .gallery-work .gallery-link img{
+    width: 100%;
+ }
+ 
+ section.gallery .gallery-work .gallery-link:hover .gallery-hover{
+    opacity: 1;
+
+ }
 
 
 
@@ -135,7 +176,7 @@ section.services .card .card-img{
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s;
-
+    z-index: 20;
 }
 .dark-mode #scrollToTopButton {
     background-color: #e8e8e8;
@@ -183,7 +224,7 @@ button#darkModeButton{
    }
    @media (max-width:540px) {
     button#darkModeButton{
-        margin-right: 7rem!important;
+        margin-right:140px !important;
        }
 }
 
