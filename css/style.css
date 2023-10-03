@@ -124,7 +124,13 @@ section.services .card .card-img{
 
  section.gallery .gallery-title h3{
     font-size: 40px;
+    margin-bottom: 10px;
+ }
+ section.gallery .gallery-title p{
     margin-bottom: 60px;
+    color: #bc98fe;
+    transition: color 1s ease-in-out ;
+
  }
  section.gallery .gallery-work a.gallery-link{
     position: relative;
@@ -565,7 +571,9 @@ button#darkModeButton{
     color: #fff;
 
 }
-
+.dark-mode section.gallery .gallery-title p{
+    color: #86c2f0;
+ }
 .dark-mode section.contacts .contact-form button:hover {
     background-color: #fff;
     color: #86c2f0;
@@ -632,6 +640,10 @@ button#darkModeButton{
     section.gallery .gallery-title h3 {
         font-size: 25px;
     }
+    section.gallery .gallery-title p{
+        font-size: 15px;
+
+     }
     header .overlay .carousel .carousel-item .carousel-content h2 {
         font-size: 30px;
 
