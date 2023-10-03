@@ -526,13 +526,13 @@ footer.footer .copyright p a{
 button#darkModeButton{
     border-radius: 50%;
     border: none;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
     color: #0e0e22;
     background-color: transparent !important;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
    }
    button#darkModeButton i{
-    font-size: 27px;
+    font-size: 25px;
    }
    button#darkModeButtonapp{
     border-radius: 50%;
