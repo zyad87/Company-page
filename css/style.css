@@ -15,6 +15,10 @@ nav.navbar{
 nav.navbar .navbar-brand img{
     width: 80%;
 }
+nav.navbar button.buttonMobile{
+    display: none;
+}
+
 nav.navbar .navbar-nav .nav-item a.nav-link{
     font-size: 16px;
     color: #e8e8e8;
@@ -514,11 +518,13 @@ button#darkModeButton{
     background-color: #0e0e22;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
    }
-   @media (max-width:540px) {
-    button#darkModeButton{
-        margin-right:140px !important;
-       }
-}
+   button#darkModeButtonapp{
+    border-radius: 50%;
+    border: none;
+    color: #e8e8e8;
+    background-color: #0e0e22;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+   }
 
 .dark-mode button#darkModeButton{
  border-radius: 50%;
@@ -527,6 +533,13 @@ button#darkModeButton{
  background-color: #e8e8e8;
  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+.dark-mode button#darkModeButtonapp{
+    border-radius: 50%;
+    border: none;
+    color: #0e0e22;
+    background-color: #e8e8e8;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+   }
 .dark-mode section.services .card {
     background-color: #26243b;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -583,7 +596,15 @@ button#darkModeButton{
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+
+    nav.navbar button.buttonapp{
+        display: none;
+    }
+    nav.navbar button.buttonMobile{
+        display: block;
+
+    }
     section.services .card {
         padding: 20px;
         height: 400px;
@@ -604,6 +625,7 @@ button#darkModeButton{
     section.contacts .contact-form {
         width: 80%;
     }
+
 }
 
 @media (max-width: 768px) {

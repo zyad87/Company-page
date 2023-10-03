@@ -30,6 +30,7 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 const darkModeButton = document.getElementById('darkModeButton');
+const darkModeButtonapp = document.getElementById('darkModeButtonapp');
 const body = document.body;
 
 // تعيين وضع الظلام باستناء
@@ -43,7 +44,16 @@ darkModeButton.addEventListener('click', () => {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
-
+darkModeButtonapp.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    // حفظ وضع الظلام في التخزين المحلي
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
 // تحقق من وضع الظلام المحفوظ في التخزين المحلي عند تحميل الصفحة
 window.addEventListener('load', () => {
     const darkMode = localStorage.getItem('darkMode');
