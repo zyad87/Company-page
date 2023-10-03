@@ -29,7 +29,7 @@ nav.navbar .navbar-nav .nav-item a.nav-link.active{
 
 }
 nav.navbar.noTransparrent{
-    background-color: #fff;
+    background-color: #F5F5F5;
     border: 1px solid #eee ;
 }
 nav.navbar.noTransparrent .nav-item a.nav-link{
@@ -260,6 +260,196 @@ backdrop-filter: blur( 9.5px );
     
  }
 
+
+section.statistics {
+    background-image: url(/images/bg-2.jpg);
+    background-position:center ;
+    background-size:cover ;
+    background-attachment:fixed ;
+}
+section.statistics .overlay {
+    background: rgba(175, 129, 255, 0.8);
+        padding: 140px 0 100px ;
+        color: #e8e8e8;
+        transition: all 0.3s ease-in-out ;
+    }
+
+section.statistics .overlay .count {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px auto 10px ;
+}
+
+section.statistics .overlay span.counter{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+section.contacts {
+    padding: 100px 0 60px;
+}
+
+section.contacts .map iframe {
+    height: 250px;
+    width: 90%;
+}
+
+section.contacts .contact-addresses h4 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+section.contacts .contact-addresses ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.contacts .contact-addresses ul li{
+    font-size: 29px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #bc98fe;
+    transition: color 1s ease-in-out ;
+
+}
+
+section.contacts .contact-addresses li address {
+    display: inline;
+
+}
+section.contacts .contact-text {
+    margin: 50px auto 20px;
+}
+
+section.contacts .contact-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section.contacts .contact-form {
+    width: 60%;
+    margin: auto;
+}
+section.contacts .contact-form input,
+section.contacts .contact-form textarea {
+background-color: #fff;
+border: 2px solid #ececec;
+font-size: 15px;
+line-height: 25px ;
+border-radius: 3px;
+text-align: right;
+transition: background-color 1s ease-in-out, border 1s ease-in-out ;
+} 
+
+section.contacts .contact-form button {
+    background-color: #bc98fe;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    width: auto;
+    margin-right: 12px;
+    transition: all 0.3s ease-in-out ;
+}
+
+section.contacts .contact-form button:hover {
+    background-color: #fff;
+    color: #bc98fe;
+
+}
+
+footer.footer .top-footer {
+    padding: 75px 0;
+    background-color: #11101a;
+}
+
+
+footer.footer .top-footer h5 {
+    font-size: 18px;
+    line-height: 45px;
+    color: #86c2f0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+footer.footer .top-footer h5::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 35px;
+    height: 3px;
+    background-color: #e8e8e8;
+}
+
+footer.footer .top-footer .about-us p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #e8e8e8;
+    margin-bottom: 60px;
+}
+
+footer.footer .top-footer .about-us ul a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #26243b;
+    color: #e8e8e8;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in-out ;
+
+}
+
+footer.footer .top-footer .about-us ul a:hover {
+    background-color: #86c2f0;
+}
+
+footer.footer .top-footer ul.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+footer.footer .top-footer ul.contact-list li {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #e8e8e8;
+
+}
+
+footer.footer .top-footer ul.contact-list li i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #26243b;
+    color: #e8e8e8;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+
+footer.footer .copyright {
+    background-color: #0e0e16;
+    padding: 30px 0;
+}
+
+footer.footer .copyright p{
+    font-size: 15px;
+    color: #e8e8e8;
+    text-align: center;
+}
+
+footer.footer .copyright p a{
+    text-decoration: none;
+    color: #86c2f0;
+}
+
+
+/* ستايل الصفحة الداكنة */
+
+
 #scrollToTopButton {
     display: none;
     position: fixed;
@@ -333,6 +523,7 @@ button#darkModeButton{
 }
 .dark-mode section.services .card {
     background-color: #26243b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #e8e8e8;
     transition: all 1s ease-in-out ;
  }
@@ -346,3 +537,99 @@ button#darkModeButton{
     background: rgba( 109, 181, 237, 0.7 );
 
      }
+
+.dark-mode section.statistics .overlay{
+    background: rgba( 109, 181, 237, 0.8 );
+
+    }
+.dark-mode section.contacts .contact-addresses ul li{
+
+        color: #86c2f0;
+    
+    }
+
+.dark-mode section.contacts .contact-form input,
+.dark-mode section.contacts .contact-form textarea {
+    background-color: #26243b;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: #e8e8e8 !important;
+
+}
+
+.dark-mode section.contacts .contact-form input::placeholder,
+.dark-mode section.contacts .contact-form textarea::placeholder{
+    color: #e8e8e8;
+}
+.dark-mode section.contacts .contact-form button {
+    background-color: #86c2f0;
+    color: #fff;
+
+}
+
+.dark-mode section.contacts .contact-form button:hover {
+    background-color: #fff;
+    color: #86c2f0;
+
+}
+
+
+
+
+@media (max-width: 992px) {
+    .dark-mode section.services .card {
+        padding: 20px;
+        height: 400px;
+    }
+    section.services .card .card-img {
+        margin-bottom: 35px;
+    }
+    section.services .card .card-block h4{
+        font-size: 20px;
+        margin-bottom: 15px;
+     }
+     section.services .card .card-block p{
+        opacity: 1;
+     }
+     section.contacts .map iframe {
+        width: 100%;
+    }
+    section.contacts .contact-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    section.gallery .gallery-work .gallery-overlay {
+        margin-top: -170vh;
+    }
+    section.gallery .gallery-work .gallery-overlay .overlay-img {
+        display: none;
+    }
+    section.contacts .map  {
+       margin-bottom: 30px;
+    }
+    footer.footer .top-footer ul.contact-list li {
+        font-size: 15px;
+    }
+}
+@media (max-width: 576px) {
+    header .overlay .carousel button {
+        display: none;
+    }
+}
+
+@media (max-width: 415px) {
+    footer.footer .copyright p {
+        font-size: 18px;
+    }
+    footer.footer .top-footer ul.contact-list li {
+        font-size: 10px;
+    }
+    section.contacts .contact-addresses ul li {
+        font-size: 18px;
+
+    }
+    section.gallery .gallery-title h3 {
+        font-size: 30px;
+    }
+}
