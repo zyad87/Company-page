@@ -632,4 +632,8 @@ button#darkModeButton{
     section.gallery .gallery-title h3 {
         font-size: 30px;
     }
+    header .overlay .carousel .carousel-item .carousel-content h2 {
+        font-size: 30px;
+
+    }
 }
