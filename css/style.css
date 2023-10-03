@@ -18,7 +18,10 @@ nav.navbar .navbar-brand img{
 nav.navbar button.buttonMobile{
     display: none;
 }
+ .navbar-toggler {
+    border:none !important;
 
+}
 nav.navbar .navbar-nav .nav-item a.nav-link{
     font-size: 16px;
     color: #e8e8e8;
@@ -507,6 +510,15 @@ footer.footer .copyright p a{
     background-color: #6db5ed;
     color: #e8e8e8;
 }
+
+.dark-mode .navbar-toggler {
+
+    color:#e8e8e8 !important;
+    background-color: transparent;
+    border:none !important;
+    transition: color 0.5s ease-in-out;
+
+}
 .dark-mode nav.navbar.noTransparrent i.fa-bars{
     color: #e8e8e8 !important;
 
@@ -514,11 +526,13 @@ footer.footer .copyright p a{
 button#darkModeButton{
     border-radius: 50%;
     border: none;
-    margin-bottom: -2px;
-
+    margin-bottom: -4px;
     color: #0e0e22;
     background-color: transparent !important;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+   }
+   button#darkModeButton i{
+    font-size: 27px;
    }
    button#darkModeButtonapp{
     border-radius: 50%;
