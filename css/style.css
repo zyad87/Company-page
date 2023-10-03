@@ -576,7 +576,7 @@ button#darkModeButton{
 
 
 @media (max-width: 992px) {
-    .dark-mode section.services .card {
+    section.services .card {
         padding: 20px;
         height: 400px;
     }
