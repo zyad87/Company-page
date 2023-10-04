@@ -15,11 +15,12 @@ nav.navbar{
 nav.navbar .navbar-brand img{
     width: 80%;
 }
-nav.navbar button.buttonMobile{
+nav.navbar button.buttonMobile {
     display: none;
 }
  .navbar-toggler {
     border:none !important;
+    font-size: 25px;
 
 }
 nav.navbar .navbar-nav .nav-item a.nav-link{
@@ -541,7 +542,12 @@ button#darkModeButton{
     background-color: transparent !important;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
    }
-
+   button#darkModeButtonapp i{
+    font-size: 30px;
+   }
+   .fa-bars:before, .fa-navicon:before {
+    font-size: 30px;
+}
 .dark-mode button#darkModeButton{
  border-radius: 50%;
  border: none;
